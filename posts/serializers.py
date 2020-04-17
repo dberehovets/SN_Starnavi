@@ -14,4 +14,4 @@ class PostCreationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Post
-        exclude = ('likes', 'unlikes')
+        exclude = ('liked_by', 'disliked_by')
